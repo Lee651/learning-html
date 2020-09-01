@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            width: 100%;
+            height: 65px;
+            background-color: black;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        header div {
+            position: relative;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header div p {
+            line-height: 65px;
+            font-size: larger;
+        }
+
+        header div ul {
+            list-style-type: none;
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+
+        header div ul li {
+            float: left;
+            padding: 0 5px;
+            color: white;
+        }
+
+        header div ul li a {
+            color: blanchedalmond;
+            font-size: 12px;
+        }
+
+        .content {
+            width: 100%;
+            height: 168px;
+            position: relative;
+        }
+
+        .content ul {
+            position: absolute;
+            width: 100%;
+        }
+
+        .content ul li {
+            width: 100%;
+        }
+        
+        .content ul li.hidden {
+            display: none;
+        }
+
+        .content ul li img {
+            width: 100%;
+            height: 168px;
+        }
+
+        .content .picture {
+            position: relative;
+            width: 960px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .content .picture ol {
+            list-style-type: none;
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+        }
+
+        .content .picture ol li {
+            float: left;
+            margin: 2px;
+        }
+
+        .content .picture ol li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: blanchedalmond;
+            color: #000;
+            padding: 5px 5px;
+            margin-top: 8px;
+        }
+
+        .content .picture .select {
+            margin-top: 0px;
+            padding-top: 13px;
+        }
+        
+        nav {
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+            padding: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border: 1px solid gray;
+        }
+
+        nav ul li:nth-of-type(2) {
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        nav div {
+            border-top: 1px solid gray;
+            height: 1px;
+            position: relative;
+            bottom: 1px;
+            z-index: -1;
+        }
+
+        nav .selected {
+            border-bottom: 1px solid white;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        main ol {
+            list-style-type: none;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        main .row1 {
+            height: 250px;
+            margin-top: 20px;
+        }
+
+        main .row1 li {
+            float: left;
+            width: 310px;
+            height: 100%;
+            line-height : 250px;
+            border: 1px solid;
+            margin-right: 8px;
+            text-align: center;
+        }
+
+        main .row1 li p {
+            margin: 0 auto;
+        }
+
+        main .row2 {
+            height: 220px;
+            margin-top: 20px;
+        }
+
+        main .row2 li {
+            float: left;
+            width: 230px;
+            height: 100%;
+            line-height : 250px;
+            border: 1px solid;
+            margin-right: 8px;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            height: 85px;
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            width: 960px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <p>Logo</p>
+            <ul>
+                <li><a href="https://github.com/">Github</a></li>
+                <li><a href="https://register.com/">Register</a></li>
+                <li><a href="https://Login.com/">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <ul>
+            <li><img src="p.png"></li>
+            <li class="hidden"><img src="p.png"></li>
+            <li class="hidden"><img src="p.png"></li>
+            <li class="hidden"><img src="p.png"></li>
+        </ul>
+        <div class="picture">
+            <ol>
+                <li><a>1</a></li>
+                <li><a class="select">2</a></li>
+                <li><a>3</a></li>
+                <li><a>4</a></li>
+            </ol>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li class="selected">HOME</li>
+            <li>PROFILE</li>
+            <li>ABOUT</li>
+        </ul>
+        <div></div>
+    </nav>
+    <main>
+        <ol>
+            <div class="row1">
+                <li>This is content 1</li>
+                <li>Maybe content 2</li>
+                <li>content 3</li>
+            </div>
+            <div class="row2">
+                <li>content 4</li>
+                <li>content 5</li>
+                <li>content 6</li>
+                <li>content 7</li>
+            </div>
+            <div class="row1">
+                <li>content 8</li>
+                <li>content 9</li>
+                <li>content 10</li>
+            </div>
+        </ol>
+    </main>
+    <footer>
+        <p>© 2018 ife.baidu.com</p>
+    </footer>
+</body>
+</html>

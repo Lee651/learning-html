@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>google</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            min-width: 1140px;
+            height: 100%;
+            min-height: 600px;
+            position: relative;
+        }
+
+        header {
+            position: relative;
+            height: 60px;
+            line-height: 60px;
+            font-size: 13px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        header a {
+            position: absolute;
+            top: 0px;
+            right: 110px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        header button {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 15px 30px;
+            padding: 5px 10px;
+            background-color: blue;
+            color: white;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 100%;
+            margin: 80px auto 0 auto;
+        }
+
+        main > div:nth-of-type(1) {
+            display: inline-block;
+            width: 100%;
+            height: 100px;
+        }
+
+        main > div:nth-of-type(1) img {
+            display: inline-block;
+            height: 100px;
+            margin-left: calc(50% - 160.7px);
+        }
+
+        main form {
+            position: relative;
+            width: 600px;
+            height: 50px;
+            margin: 30px auto 0 auto;
+        }
+
+        main form input[type="text"] {
+            width: 600px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid gray;
+            margin-left: calc(50% - 300px);
+            padding-left: 40px;
+        }
+
+        main form input[type="text"]:hover {
+            
+            border-color: red;
+        }
+
+        main form input[type="text"]:focus {
+            border-radius: 20px;
+            outline: none;
+        }
+
+        main form .content {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+        }
+
+        main form a img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        main > div:nth-of-type(2) {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            margin: 30px auto 0 auto;
+        }
+
+        main > div:nth-of-type(2) button {
+            font-size: 16px;
+            padding: 5px 10px;
+            margin: 0px 10px;
+            
+        }
+
+        main > div:nth-of-type(2) button:nth-of-type(1) {
+            margin-left: calc(50% - 116.024px);
+        }
+
+        main > div:nth-of-type(2) button:hover {
+            border-color: blueviolet;
+        }       
+
+        footer {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-decoration: none;
+            border-top: 1px solid;
+            background-color: red;
+        } 
+
+        footer > div:nth-of-type(1) {
+            float: left;
+        }
+
+        footer > div:nth-of-type(2) {
+            float: right;
+        }
+
+        footer div a {
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+        } 
+
+        footer div a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://google.com.hk">图片</a>
+        <button>登录</button>
+    </header>
+    <main>
+        <div>
+            <img src="Google-logo.png" alt="google图标">
+        </div>
+        <form action="show-data.php">
+            <input type="text">
+            <img src="search.png" alt="搜索图标" class="content">
+            <a href="https://google.com.hk"><img src="voice-tube.png" alt="语音搜索"></a>
+        </form>
+        <div>
+            <button>google搜索</button>
+            <button>手气不错</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://google.com.hk">广告</a>
+            <a href="https://google.com.hk">商务</a>
+            <a href="https://google.com.hk">google大全</a>
+            <a href="https://google.com.hk">google搜索的运作方式</a>
+        </div>
+        <div>
+            <a href="https://google.com.hk">隐私权</a>
+            <a href="https://google.com.hk">条款</a>
+            <a href="https://google.com.hk">设置</a>
+        </div>
+    </footer>
+</body>
+</html>

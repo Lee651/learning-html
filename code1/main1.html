@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main {
+            border: 1px solid #999;
+            width: 574px;
+            position: fixed;
+            left: calc(50% - 287px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .main ul li {
+            display: inline-block;
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+            font-size: 14px;
+            font-family: "Microsoft YaHei",微软雅黑;
+            text-align: center;
+            line-height: 50px;
+            vertical-align: middle;
+            background-color: #f1f1f1;
+            list-style-type: none;
+        }
+        
+        .main ul li:nth-of-type(1) {
+            width: 190px;
+        }
+
+        .main ul li:nth-of-type(2) {
+            width: 192px;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        .main ul li:nth-of-type(3) {
+            width: 190px;
+        }
+
+        .main ul li.selected {
+            border-bottom: 0px;
+        }
+
+        p {
+            padding: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li class="selected">课程</li><li>学习计划</li><li>能谱图</li>
+        </ul>
+        <div>
+            <p>人呐，不容易。时也命也运也，天有不测风云，人有旦夕祸福。蜈蚣百足，行不及蛇,灵鸡有翼，飞不如鸦。马有千里之程，无人不能自往；人有凌云之志，非运不能腾达。文章盖世，孔子困于陈蔡；武略超群，太公垂钓于渭水。盗跖年幼，不是善良之辈；颜回命短，实非凶恶之徒。尧舜至圣，反生不肖之子；瞽叟顽呆，却生大圣之儿。张良原是布衣，萧何称谓县吏。晏子身无五尺，能做齐国首相；孔明居卧草庐，作了蜀汉军师。韩信手无缚鸡之力，封了汉朝大将；冯唐有安邦之志，到老半官无封；楚王虽雄，难免乌江自刎；汉王虽弱，却有万里江山。满腹经纶，白发不第；才疏学浅，少年登科。有先贫而后富，有先富而后贫。蛟龙未遇，潜身于鱼虾之间；君子失时，拱手于小人之下。天不得时，日月无光；地不得时，草木不长；水不得时，风浪不止；人不得时，利运不通。盖人生在世，富贵不能移，贫贱不能欺。此乃天地循环，终而复始者也。</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="test" style="background-image: url(smile.jpg); width: 480px; height: 480px;
+        background-position: 0px 0px; position: absolute; left: calc(50% - 240px);"></div>
+    <script>
+        var para = document.getElementById("test");
+        var ypos = parseInt(para.style.backgroundPositionY);
+        
+        function addPosition() {
+            if ( ypos == 8160) {
+                minusPosition();
+                return true;
+            }
+            if (ypos < 8160) {
+                ypos += 480;
+            }
+            para.style.backgroundPositionY = ypos + "px";
+            setTimeout("addPosition()", 100);
+        }
+
+        function minusPosition() {
+            if (ypos > 0) {
+                ypos -= 480;
+            }
+            if (ypos == 0) {
+                addPosition();
+                return true;
+            }
+            para.style.backgroundPositionY = ypos + "px";
+            setTimeout("minusPosition()", 100);
+        }
+
+        addPosition();
+    </script>
+</body>
+</html>
+
+
